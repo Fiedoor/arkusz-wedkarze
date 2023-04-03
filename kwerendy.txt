@@ -1,0 +1,4 @@
+1: SELECT `nazwa`, `wystepowanie` FROM `Ryby`;
+2: SELECT `Ryby_id`,`wymiar_ochronny` FROM `Okres_ochronny` WHERE `wymiar_ochronny` < 50;
+3: SELECT `nazwa`,`akwen`,`wojewodztwo` FROM `ryby` INNER JOIN `Lowisko` ON ryby.id=lowisko.Ryby_id;
+4: ALTER TABLE ryby ADD COLUMN dobowy_limit;
