@@ -13,10 +13,20 @@
     </header>
     <div id="left">
         <h2>Ryby drapieżne naszych wód</h2>
-        <ul></ul>
+        <ul>
+            <?php
+            $conn = mysqli_connect('localhost', 'root', '', 'wedkowanie');
+            $kw = mysqli_query($conn, "SELECT `nazwa`, `wystepowanie` FROM `Ryby`");
+            foreach ($kw as $result) {
+                echo "<li>" . $result["nazwa"] . ",  Występowanie: " . $result["wystepowanie"] . "</li>";
+            }
+            ;
+            mysqli_close($conn);
+            ?>
+        </ul>
     </div>
     <div id="right">
-        <img src="ryba1.jpg" alt="Sum">
+        <img src="ryba1.jpg" alt="Sum"> <br>
         <a href="kwerendy.txt">Pobierz kwerendy</a>
     </div>
     <footer>
