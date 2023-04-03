@@ -27,7 +27,7 @@
     </div>
     <div id="right">
         <img src="ryba1.jpg" alt="Sum"> <br>
-        <a href="kwerendy.txt">Pobierz kwerendy</a>
+        <a href="kwerendy.txt" download>Pobierz kwerendy</a>
     </div>
     <footer>
         <p>Stronę wykonał: Stanisław Fiedoruk 4J</p>
